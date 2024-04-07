@@ -172,12 +172,52 @@ main{
     justify-content: space-between;
 }
 
-
-
-
 .iconsArea i{
-    
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    width: 100%;
 }
+
+.iconsArea i span{
+    color: #000;
+    font-size: 17px;
+    padding-top: 10px;
+    font-family: var(--fontDefault);
+}
+
+
+.iconsArea i:hover{
+    color: #000;
+}
+
+.iconsArea .javaIcon:hover{
+    background-color: #EA2D2E;
+}
+
+.iconsArea .jsIcon:hover{
+    background-color: #F0DB4F;
+}
+
+.iconsArea .pyIcon:hover{
+    background-color: #FFD845;
+}
+
+.iconsArea .phpIcon:hover{
+    background-color: #777BB3;
+}
+
+.iconsArea .reactIcon:hover{
+    background-color: #60D8FA;
+}
+
+.iconsArea .sassIcon:hover{
+    background-color: #CC6699;
+}
+
+
 
 footer {
     font-family: var(--fontDefault);
