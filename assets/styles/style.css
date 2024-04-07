@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --fontDefault: 'Outfit';
+}
+
+html{
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #192A51, #412cca);
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.logo:hover {
+    transform: rotate(90deg);
+}
+
+.headerContent {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+main{
+    width: 65vw;
+}
+
+#profilePic {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    animation: floatingImage 10s infinite;
+}
+
+@keyframes floatingImage {
+    0% {
+        transform: translateY(0px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    50% {
+        transform: translateY(15px);
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    100% {
+        transform: translateY(0px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.profileDesk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 65vw;
+    margin-bottom: 50vh;
+}
+
+.profileInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.textTitle {
+    text-align: end;
+    font-family: var(--fontDefault);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.animate {
+    background-image: linear-gradient(to right, #0a4188, #2051bb);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .7s ease;
+}
+
+.textTitle:hover .animate {
+    background-size: 100% 100%;
+}
+
+.carreerDesk{
+    height: 100vh;
+}
+
+.carreerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textArea{
+    margin-top: 35px;
+    font-size: 25px;
+    width: 60%;
+    text-align: justify;
+    line-height: 1.8;
+    color: #FFF;
+    font-family: var(--fontDefault);
+    font-weight: 500;
+}
+
+.java{
+    color: #F0931C;
+    text-shadow: 1px 1px 20px;
+}
+
+.js{
+    color: #EFD81D;
+    text-shadow: 1px 1px 20px;
+}
+
+.python{
+    color: #3B6899;
+    text-shadow: 1px 1px 20px;
+}
+
+.php{
+    color: #7377AD;
+    text-shadow: 1px 1px 20px;
+}
+
+.rn{
+    color: #5ED3F3;
+    text-shadow: 1px 1px 20px;
+}
+
+.sass{
+    color: #C76494;
+    text-shadow: 1px 1px 20px;
+}
+
+.iconsArea{
+    width: 80%;
+    margin-top: 60px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.iconsArea i{
+    
+}
+
+footer {
+    font-family: var(--fontDefault);
+    font-size: 25px;
+    color: #FFF;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #000;
+    width: 100vw;
+    padding: 10px;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 430px) {
+    .headerContent {
+        justify-content: center;
+    }
+
+    .profileDesk {
+        margin-top: 50px;
+    }
+
+    .profileInfo {
+        flex-direction: column;
+    }
+
+    .textTitle {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #profilePic {
+        max-width: 250px;
+    }
+
+    .textArea{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .iconsArea{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .iconsArea i {
+        padding: 15px;
+    }
+}
+
+/* Tablet resposive */
+@media screen and (max-width: 768px) and (min-width:426px){
+    #profilePic{        
+        max-width: 320px;
+    }
+
+    .headerContent{
+        justify-content: center;
+    }
+
+    .profileDesk{
+        margin-top: 70px;
+    }
+
+    .profileInfo{
+        flex-direction: column;
+    }
+
+    .textTitle{
+        margin-top: 50px;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .textArea{
+        width: 100%;
+    }
+    .iconsArea{
+        width: 120%
+    }
+}
+
+/* Laptop responsive  */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    #profilePic {
+        max-width: 320px;
+    }
+
+    .textTitle {
+        font-size: 70px;
+        margin-left: 50px;
+    }
+
+    .textArea{
+        width: 80%;
+        
+    }
+
+    .iconsArea{
+        width: 100%;
+    }
+
+    .profileInfo {}
+}
