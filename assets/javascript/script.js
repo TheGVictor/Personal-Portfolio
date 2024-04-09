@@ -1,10 +1,5 @@
-const javaIcon  =document.querySelector('.javaIcon')
-const textIcon = document.querySelector('.textIcon')
+projectsJson.map((item, key)=>{
+    let project = document.querySelector('.modal .project').cloneNode(true)
+    document.querySelector('.projectsBoard').append( project )
 
-javaIcon.addEventListener('mouseover', ()=>{
-    textIcon.textContent = "Java"
-})
-
-javaIcon.addEventListener('mouseout', ()=>{
-    textIcon.innerHTML = ""
 })

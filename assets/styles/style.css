@@ -12,6 +12,8 @@ html{
 * {
     padding: 0;
     margin: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, #192A51, #412cca);
+    background: linear-gradient(180deg, #131222  , #1E1741  , #30285F ,  #412CCA);
 }
 
 
@@ -49,7 +51,7 @@ body {
 }
 
 main{
-    width: 65vw;
+    width: 70vw;
 }
 
 #profilePic {
@@ -164,11 +166,10 @@ main{
 }
 
 .iconsArea{
-    width: 80%;
     margin-top: 60px;
     font-size: 80px;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: space-between;
 }
 
@@ -217,7 +218,54 @@ main{
     background-color: #CC6699;
 }
 
+.projectsDesk{
+    height: 100vh;
+}
 
+.projectsArea{
+    text-align: center;
+    width: 100%;
+}
+
+.projectsBoard{
+    width: 100%;
+    background-color: #ec5f00;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project{
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.projectImage img{
+    width: 100%;
+}
+
+.projectName{
+    display: flex;
+    position: absolute;
+    align-items: center;    
+    justify-content: center;
+    height: 25%;
+    width: 100%;
+    background-color: #e70000;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.projectName span{
+    font-family: var(--fontDefault);
+    color: #FFF;
+}
+
+.modal{
+    display: none;
+}
 
 footer {
     font-family: var(--fontDefault);
@@ -230,6 +278,7 @@ footer {
     width: 100vw;
     padding: 10px;
 }
+
 
 /* Mobile responsive */
 @media screen and (max-width: 430px) {
@@ -268,7 +317,9 @@ footer {
     }
 
     .iconsArea i {
-        padding: 15px;
+        width: auto;
+        padding: 10px;
+        width: auto;
     }
 }
 
@@ -299,8 +350,19 @@ footer {
     .textArea{
         width: 100%;
     }
+
+    .iconsArea i{
+        width: auto;
+    }
+
     .iconsArea{
-        width: 120%
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .carreerDesk
+    {
+
     }
 }
 
@@ -322,6 +384,12 @@ footer {
 
     .iconsArea{
         width: 100%;
+    }
+
+    .carreerDesk{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .profileInfo {}
