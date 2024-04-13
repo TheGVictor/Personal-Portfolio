@@ -12,8 +12,7 @@ html{
 * {
     padding: 0;
     margin: 0;
-    border: 0;
-    vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,6 +51,7 @@ body {
 
 main{
     width: 70vw;
+    margin-bottom: 150px;
 }
 
 #profilePic {
@@ -229,7 +229,7 @@ main{
 
 .projectsBoard{
     width: 100%;
-    background-color: #ec5f00;
+    padding: 1px;
     margin-top: 150px;
     display: flex;
     justify-content: space-between;
@@ -238,8 +238,12 @@ main{
 
 .project{
     position: relative;
-    width: 30%;
+    width: 45%;
     margin-bottom: 20px;
+}
+
+.projectImage{
+    width: 100%;
 }
 
 .projectImage img{
@@ -247,15 +251,21 @@ main{
 }
 
 .projectName{
-    display: flex;
     position: absolute;
+    display: flex;    
     align-items: center;    
     justify-content: center;
     height: 25%;
     width: 100%;
-    background-color: #e70000;
-    bottom: 0;
-    opacity: 0.6;
+    background-color: rgba(8,8,8, 0.7);
+    transition: all .2s ease-in-out;
+    bottom: 3px;
+}
+
+.project:hover .projectName{
+    background-color: rgba(8,8,8, 0.9);
+    font-size: 30px;
+    height: 100%;
 }
 
 .projectName span{
