@@ -5,9 +5,9 @@
 }
 
 html{
-   overflow-x: hidden;
-   overflow-y: hidden;
+    overflow-x: hidden;
 }
+
 
 * {
     padding: 0;
@@ -79,6 +79,7 @@ main{
 }
 
 .profileDesk {
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,15 +89,13 @@ main{
 }
 
 .profileInfo {
+    text-align: end;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-
-.textTitle {
-    text-align: end;
+.textTitle span {
     font-family: var(--fontDefault);
     color: #FFF;
     font-weight: 700;
@@ -116,6 +115,7 @@ main{
 
 .carreerDesk{
     height: 100vh;
+    visibility: hidden;
 }
 
 .carreerInfo{
@@ -219,6 +219,7 @@ main{
 }
 
 .projectsDesk{
+    visibility: hidden;
     height: 100vh;
 }
 
