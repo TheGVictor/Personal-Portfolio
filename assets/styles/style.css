@@ -81,18 +81,37 @@ main{
 .profileDesk {
     visibility: hidden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 100px;
     width: 65vw;
     margin-bottom: 50vh;
 }
 
+.profileDesk .linksArea{
+    display: none;
+}
+
+
 .profileInfo {
     text-align: end;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.linksArea i{
+    color: #9801CE;
+    padding: 5px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.linksArea i:hover{
+    text-shadow: 1px 1px 10px #303030;
+    transform: scale(1.2);
+    color: #d254ff;
 }
 
 .textTitle span {
@@ -297,9 +316,18 @@ footer {
         justify-content: center;
     }
 
+    .header .linksArea{
+        display: none;
+    }
+
     .profileDesk {
         width: 100%;
         margin-top: 50px;
+    }
+
+    .profileDesk .linksArea{
+        display: flex;
+        margin-top: 40px;
     }
 
     .profileInfo {
@@ -358,7 +386,7 @@ footer {
     }
 
     .headerContent{
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .profileDesk{
