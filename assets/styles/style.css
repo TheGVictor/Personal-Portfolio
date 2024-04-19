@@ -298,6 +298,7 @@ footer {
     }
 
     .profileDesk {
+        width: 100%;
         margin-top: 50px;
     }
 
@@ -305,7 +306,7 @@ footer {
         flex-direction: column;
     }
 
-    .textTitle {
+    .textTitle, .textTitle span{
         margin-top: 50px;
         text-align: center;
         font-size: 40px;
@@ -313,6 +314,12 @@ footer {
 
     #profilePic {
         max-width: 250px;
+    }
+
+    .carreerDesk{
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 500px;
     }
 
     .textArea{
@@ -332,6 +339,16 @@ footer {
         padding: 10px;
         width: auto;
     }
+
+    .projectsBoard{
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 80%;
+    }
 }
 
 /* Tablet resposive */
@@ -345,6 +362,7 @@ footer {
     }
 
     .profileDesk{
+        width: 100%;
         margin-top: 70px;
     }
 
@@ -352,7 +370,7 @@ footer {
         flex-direction: column;
     }
 
-    .textTitle{
+    .textTitle, .textTitle span{
         margin-top: 50px;
         font-size: 60px;
         text-align: center;
@@ -371,9 +389,8 @@ footer {
         flex-wrap: wrap;
     }
 
-    .carreerDesk
-    {
-
+    .carreerDesk{
+        margin-bottom: 300px;
     }
 }
 
@@ -383,10 +400,13 @@ footer {
         max-width: 320px;
     }
 
-    .textTitle {
+
+    .textTitle{
+        text-align: center;
         font-size: 70px;
         margin-left: 50px;
     }
+     
 
     .textArea{
         width: 80%;
@@ -397,10 +417,11 @@ footer {
         width: 100%;
     }
 
-    .carreerDesk{
+    .carreerDesk{        
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
     }
 
     .profileInfo {}

@@ -4,7 +4,10 @@ sr.reveal('.profileDesk')
 sr.reveal('.carreerDesk')
 sr.reveal('.projectsDesk')
 
-sr.reveal('.textTitle', { scale: 0.85 })
+sr.reveal('.textTitle', { 
+    scale: 0.85,
+    delay: 500
+})
 
 sr.reveal('.colored', {
     rotate: {x: 0, y: 80, z:0},
