@@ -31,6 +31,46 @@ body {
     justify-content: center;
 }
 
+.linksArea{
+    display: flex;
+    align-items: center;
+}
+
+
+.translate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.english{
+    background-image: url('../../src/images/englishIcon.png');
+    background-size: cover;
+}
+
+.portuguese{
+    background-image: url('../../src/images/portugueseIcon.png');
+    background-size: cover;
+}
+
+.linksArea i{
+    color: #9801CE;
+    padding: 5px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.linksArea i:hover{
+    text-shadow: 1px 1px 10px #303030;
+    transform: scale(1.2);
+    color: #d254ff;
+}
+
 .logo {
     width: 100px;
     cursor: pointer;
@@ -101,18 +141,7 @@ main{
 }
 
 
-.linksArea i{
-    color: #9801CE;
-    padding: 5px;
-    font-size: 40px;
-    cursor: pointer;
-}
 
-.linksArea i:hover{
-    text-shadow: 1px 1px 10px #303030;
-    transform: scale(1.2);
-    color: #d254ff;
-}
 
 .textTitle span {
     font-family: var(--fontDefault);

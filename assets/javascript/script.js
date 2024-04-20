@@ -1,4 +1,17 @@
 window.sr = ScrollReveal({reset: true})
+const buttonIdiom = document.querySelector('.translate')
+
+buttonIdiom.addEventListener('click', ()=>{
+
+    if(buttonIdiom.classList.contains('portuguese')){
+        buttonIdiom.classList.remove('portuguese')
+        buttonIdiom.classList.add('english')
+    }
+    else{
+        buttonIdiom.classList.add('portuguese')
+        buttonIdiom.classList.remove('english')
+    }
+})
 
 sr.reveal('.profileDesk')
 sr.reveal('.carreerDesk')
